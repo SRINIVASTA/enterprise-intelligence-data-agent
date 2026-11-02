@@ -140,9 +140,9 @@ python setup.py
 ```
 
 ### 4. Boot the Microservice Dashboard Application
-Launch your Streamlit web server dashboard instance locally:
+Launch your web server dashboard instance locally:
 ```bash
-streamlit run app.py
+localhost:8506 run app.py
 ```
 
 ---
