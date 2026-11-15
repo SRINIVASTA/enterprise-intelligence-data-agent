@@ -4,6 +4,13 @@ A decentralized, local analytics microservice architecture designed to parse ent
 
 All components are dynamically aligned with the project's data schema requirements, enforcing strict uppercase data dimensions and utilizing local SQLite processing layers.
 
+## About
+
+Local multi-channel marketing intelligence agent built with Streamlit, LangChain, Groq LLM, and Pandas/SQLite. Programmatically parses transactional sales logs, correlates social influencer metrics, detects manufacturing defects, and dispatches automated HTML executive reports via SMTP.
+
+### ⭐ Show Your Support
+
+If you like the UI design, microservice architecture, or automated multi-channel analytics behind **Enterprise Intelligence Data Agent**, please consider giving this repository a **Star ⭐** on GitHub! It helps showcase this work and motivates future builds.
 ---
 ![Desktop Screenshot](assets/desktop-screenshot.png)
 
@@ -157,20 +164,30 @@ The application dashboard provides four pre-onboarded automated quick-prompt tas
 *   **🛡️ Q4: Record Hygiene (System Integrity Matrix):** Evaluates interaction boundaries and bounce thresholds. It computes live delivery telemetry logs, **automatically switches broken or deactivated user row records to inactive status metrics**, and dispatches a rich-text HTML advisory report titled `📋 Q4 Executive Operations Audit - System User Base Health`.
 
 ---
+---
 
-## 🛠️ Offline Testing & Debugging (Mock SMTP)
+## ⚠️ Disclaimer
 
-If you are running the system without an active internet gateway or DNS connection to live external mail relays, you can bypass network timeouts (`[Errno -2] Name or service not known`) by spinning up a local Python diagnostic mail interceptor loop:
+This **Enterprise Intelligence Data Agent** is provided strictly for educational, research, and technical evaluation. It uses simulated data (`mock_data.db`), and automated AI-generated reports require human oversight before making business or financial decisions. Users must safely manage their own API keys (`GROQ_API_KEY`), respect rate limits, and ensure email reports go only to authorized users.
 
-1. Open a separate console terminal and start a dummy local debugging server:
-   ```bash
-   python -m smtpd -c DebuggingServer -n localhost:1025
-   ```
-2. Update your `.streamlit/secrets.toml` configuration keys to intercept metrics locally:
-   ```toml
-   SMTP_SERVER = "localhost"
-   SMTP_PORT = 1025
-   SMTP_USER = "test@local.me"
-   SMTP_PASSWORD = "bypass_token"
-   ```
-Your analytical engine reports will now instantly print safely into your background terminal window without network delays.
+---
+
+## 🛡️ License, Copyright & Compliance Notices
+
+**All Rights Reserved © 2026 T A Srinivas.**
+
+> **Strict Intellectual Property Notice:** For portfolio viewing and evaluation only. **DO NOT COPY, CLONE, FORK, OR REDISTRIBUTE** this code or documentation. Unauthorized usage will result in a **GitHub DMCA copyright takedown**.
+
+* **Lead Architect & Developer:** [Srinivasta](https://github.com) | **Contact:** [tasrinivass@gmail.com](mailto:tasrinivass@gmail.com)
+
+### 🌐 Let’s Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srinivas-t-a-557637119/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/srinivasta)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tasrinivass@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/srinivasta)
+[![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=website&logoColor=white)](https://srinivasta.github.io)
+
+---
+
+💡 *Engineered with **automated analytical pipelines** to bridge the gap between **raw multi-channel enterprise telemetry** and **actionable executive intelligence**.*
